@@ -1,5 +1,4 @@
-// COPYRIGHT:
-/*
+		COPYRIGHT:
 :::::::::::::::::::::::::::::::::::::::::
 	https://uk.wikipedia.org/wiki/RSA
 :::::::::::::::::::::::::::::::::::::::::
@@ -42,5 +41,3 @@ EXAMPLE:
 	message = pow(code_message, d) mod n
 	= pow(4051753, 6111579) mod 9173503
 	= 111111
-
-*/
