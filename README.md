@@ -33,11 +33,11 @@ It is also a key pair (public and private key) generator.
 	6. {e, n} = {3, 9173503}.
 	7. {d, n} = {6111579, 9173503}.
 **coding:**
-	> message = 111111.
-	> code_message = pow(m, e) mod n =
+	* message = 111111.
+	* code_message = pow(m, e) mod n =
 		     = pow(111111, 3) mod 9173503 =
 		     = 4051753.
 **decoding:**
-	> message = pow(code_message, d) mod n =
+	* message = pow(code_message, d) mod n =
 	        = pow(4051753, 6111579) mod 9173503 =
 	        = 111111
