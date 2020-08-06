@@ -23,7 +23,7 @@ The keys for the RSA algorithm are generated the following way:
 		'e' is released as the public key exponent.
 	5. Comput 'd' to satisfy the congruence relatin d*e ~~ 1 mod f(n).
 
-EXAMPLE:
+Example:
 	1. p = 3557. & q = 2579.
 	2. n = p * q = 3557 * 2579 = 9173503.
 	3. f(n) = (p - 1) * (q - 1) = 9167368.
@@ -32,12 +32,12 @@ EXAMPLE:
 	   d = 6111579.
 	6. {e, n} = {3, 9173503}.
 	7. {d, n} = {6111579, 9173503}.
-   coding:
+coding:
 	message = 111111.
 	code_message = pow(m, e) mod n =
 		     = pow(111111, 3) mod 9173503 =
 		     = 4051753.
-   decoding:
+decoding:
 	message = pow(code_message, d) mod n =
 	        = pow(4051753, 6111579) mod 9173503 =
 	        = 111111
